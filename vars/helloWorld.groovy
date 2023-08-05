@@ -1,3 +1,3 @@
-def call(String name, String dayOfWeek){
-  sh "echo Hello $name, Today is $dayOfWeek"
+def call(Map stringParams){
+  sh "echo Hello ${stringParams.name}, Today is ${stringParams.dayOfWeek}"
 }
